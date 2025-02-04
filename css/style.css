@@ -2580,3 +2580,36 @@ h4 a:hover {
 .navbar-brand h1 {
   margin: 0; /* Remove default margin */
 }
+
+
+/*Link to e-reader*/
+.banner {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: #333;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.banner a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.btn-visit {
+  color: #d3580c !important;
+}
