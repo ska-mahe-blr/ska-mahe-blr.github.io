@@ -999,7 +999,11 @@ div#preloader {
 
 .team .bottom-row {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;   /* Center all members horizontally */
+  gap: 40px;                 /* Space between cards */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .team .member {
@@ -1906,6 +1910,29 @@ div#preloader {
   background-attachment: fixed;
 }
 
+/* For BLOG page */
+.blog-page .header-bg {
+  background: url('../img/slider/slider1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* For LOGIN page */
+.login-page .header-bg {
+  background: url('../img/slider/slider1.jpg') no-repeat center center; /* different image if needed */
+  background-size: cover;
+  height: 900px; /* shorter height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
 .header-bg.home-2 {
   width: 100%;
   height: 100%;
@@ -2390,6 +2417,10 @@ span.email-notes {
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
+  width: 320px;         /* Set your desired width */
+  min-width: 280px;     /* Optional: minimum width for responsiveness */
+  max-width: 340px;     /* Optional: maximum width for responsiveness */
+  box-sizing: border-box;
   text-align: center;
   width: auto; /* Allow width to adjust based on content */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -2613,3 +2644,4 @@ h4 a:hover {
 .btn-visit {
   color: #d3580c !important;
 }
+
